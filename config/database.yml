@@ -6,7 +6,7 @@ development:
   database: muni
   pool: 5
   username: postgres
-  password: bocaju
+  password: 
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -18,7 +18,7 @@ test:
   database: muni_test
   pool: 5
   username: postgres
-  password: bocaju
+  password: 
   host: localhost
 
 production:
@@ -27,5 +27,5 @@ production:
   database: muni_production
   pool: 5
   username: postgres
-  password: bocaju
+  password: 
   host: localhost
