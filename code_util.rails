@@ -1,0 +1,118 @@
+<% if user_signed_in? %>
+  							Logged in as <strong><%= current_user.email %></strong>.
+  							<%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  							<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+							<% else %>
+  							<%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+ 							 <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+							<% end %>
+
+
+
+
+
+
+
+							<!-- jQuery -->
+    <script src="jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="raphael.min.js"></script>
+    <script src="morris.min.js"></script>
+    <script src="morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="sb-admin-2.js"></script>
+
+
+     <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+
+
+    <!-- MetisMenu CSS -->
+    <link href="metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome.css" rel="stylesheet" type="text/css">
+
+    src="<% asset_path 'sort_asc.png'%>"
+
+     <img src="<%= asset_path 'Maipu-logo.png' %>"></a>
+
+     <img src="<%= image_tag("Maipu-logo.png", alt: "Brand") %>"
+
+
+     send_file(
+              "#{Rails.root}/288933473.pdf",#+@nombre+".PDF",
+              filename: "28893347.pdf",
+              type: "application/pdf"
+               )
+
+
+    send_file(
+              "#{Rails.root}/"+@nombre+".pdf",#+@nombre+".PDF",
+              filename: @nombre+".pdf",
+              type: "application/pdf",
+              )
+
+
+
+
+<div id = 'oculto' style='display: none;''>
+<%= form_tag({:controller => "recibo", :action => "recibo"}, :method => "get") do %>
+
+<%= submit_tag "Volver", class:'btn btn-success' %>
+
+
+<% end %>
+
+</div>
+
+
+INSERT INTO empleados id, legajo, cuit, nombre VALUES (select id, legajo, cuil, apellido y nombre from listado1);
+
+
+INSERT INTO empleados id, legajo, cuit, nombre VALUES (select id, legajo, cuil, apellido y nombre from listado1);
+
+
+INSERT INTO empleados legajo, cuit, nombre select legajo, cuil, "apellido y nombre" from listado1
+
+INSERT INTO empleados (legajo, cuit, nombre) select legajo, cuil, "apellido y nombre" from listado1
+
+INSERT INTO empleados (id, legajo, cuit, nombre,  created_at, updated_at) select id, legajo, cuil, "apellido y nombre", 1, 2 from listado1
+
+
+Business.where(id: -1) 
+ #=> returns an empty ActiveRecord::Relation ( similar to an array )
+Business.where(id: -1).nil? # ( similar to == nil? )
+ #=> returns false
+Business.where(id: -1).empty? # test if the array is empty ( similar to .blank? )
+ #=> returns true
+
+
+ if Business.exists?(user_id: current_user.id)
+  # same as Business.where(user_id: current_user.id).exists?
+  # ...
+else
+  # ...
+end
+
+<%= form_tag({:controller => "recibo", :action => "indice"}, :method => "get") do %>
+
+ <%= submit_tag "indice", class:'btn btn-success' %>
+
+
+<% end %>

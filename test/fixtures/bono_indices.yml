@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  anio: MyString
+  mes: MyString
+  dni: MyString
+  pagina: 1
+  archivo_name: MyString
+
+two:
+  anio: MyString
+  mes: MyString
+  dni: MyString
+  pagina: 1
+  archivo_name: MyString

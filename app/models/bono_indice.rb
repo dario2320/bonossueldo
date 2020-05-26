@@ -1,0 +1,2 @@
+class BonoIndice < ApplicationRecord
+end

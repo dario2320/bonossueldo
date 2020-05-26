@@ -1,0 +1,82 @@
+<%= form_tag({:controller => "recibo", :action => "dwl_recibo"}, :method => "get") do %>
+<div class = "col-lg-6">
+<div><label>Mes</label>
+<select class="form-control" name = "mes_id">
+<option value = "<%= 'Enero' %>">Enero</option>
+<option value = "<%= 'Febrero' %>">Febrero</option>
+<option value = "<%= 'Marzo' %>">Marzo</option>
+<option value = "<%= 'Abril' %>">Abril</option>
+<option value = "<%= 'Mayo' %>">Mayo</option>
+<option value = "<%= 'Junio' %>">Junio</option>
+<option value = "<%= 'Julio' %>">Julio</option>
+<option value = "<%= 'Agosto' %>">Agosto</option>
+<option value = "<%= 'Septiembre' %>">Septiembre</option>
+<option value = "<%= 'Octubre' %>">Octubre</option>
+<option value = "<%= 'Noviembre' %>">Noviembre</option>
+<option value = "<%= 'Diciembre' %>">Diciembre</option>
+</select>
+</div>
+<div><label>Año</label>
+<select class="form-control" name = "year_id">
+<option value="<%= 2010 %>">2010</option>
+<option value="<%= 2011 %>">2011</option>
+<option value ="<%=2012 %>">2012</option>
+<option value ="<%= 2013 %>">2013</option>
+<option value ="<%= 2014 %>">2014</option>
+<option value ="<%= 2015 %>">2015</option>
+<option value ="<%= 2016 %>">2016</option>
+<option value ="<%= 2017 %>">2017</option>
+<option value ="<%= 2018 %>">2018</option>
+<option value ="<%= 2019 %>">2019</option>
+<option value ="<%= 2020 %>">2020</option>
+<option value ="<%= 2021 %>">2021</option>
+<option value ="<%= 2022 %>">2022</option>
+<option value ="<%= 2023 %>">2023</option>
+<option value ="<%= 2024 %>">2024</option>
+<option value ="<%= 2025 %>">2025</option>
+<option value ="<%= 2026 %>">2026</option>
+<option value ="<%= 2027 %>">2027</option>
+<option value ="<%= 2028 %>">2028</option>
+<option value ="<%= 2029 %>">2029</option>
+<option value ="<%= 2030 %>">2030</option>
+</select>
+</div>
+
+<br>
+<%= submit_tag "Descargar", class:'btn btn-success', onclick: 'mostrar()' %>
+
+
+<br/>
+
+<% end %>
+<br>
+<div id = 'oculto' style='display: none;'>
+<%= form_tag({:controller => "recibo", :action => "recibo"}, :method => "get") do %>
+
+<%= submit_tag "Volver", class:'btn btn-success' %>
+
+
+<% end %>
+
+</div>
+
+	
+
+
+
+
+
+</div>
+</br>
+
+
+<div id='' style='display:none;'>
+<%= submit_tag "Volver", class:'btn btn-success' %>
+
+</div>
+
+<script type="text/javascript">
+function mostrar(){
+document.getElementById('oculto').style.display = 'block';}
+</script>
+
