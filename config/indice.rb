@@ -6,7 +6,7 @@
   require_relative '/home/sabatinid/.rvm/gems/ruby-2.4.0/gems/pg-0.21.0/lib/pg'
   require 'active_record'
 
-  conn = PGconn.connect("localhost", 5432, '', '', "muni", "postgres", "bocaju")
+  conn = PGconn.connect("localhost", 5432, '', '', )
 
   parchive = ARGV[0]
   panio = ARGV[1]
